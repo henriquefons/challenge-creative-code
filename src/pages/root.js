@@ -1,9 +1,6 @@
 import React from 'react';
+import Login from '../components/Login/Login';
 
-const Root = () => (
-  <div>
-    <p>Aqui ficara as rotas</p>
-  </div>
-);
+const Root = () => <Login />;
 
 export default Root;
