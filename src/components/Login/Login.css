@@ -13,7 +13,6 @@
 
 .login__form-input {
   height: 100%;
-  width: 100% !important;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -21,9 +20,12 @@
   align-content: center;
 }
 
+.login__form-input div {
+  margin: 10px 0;
+}
 
 .login__form-container {
-  padding: 20px 50px;
+  padding: 15% 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,6 +50,12 @@
   align-content: center;
 }
 
+.login__form-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .login__content-logo {
   font-style: normal;
   font-weight: bold;
@@ -55,6 +63,7 @@
   line-height: 69px;
   color: #F1F1F1;
 }
+
 .login__content-logo span {
   color: #AA5BE2;
 }
