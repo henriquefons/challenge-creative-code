@@ -25,6 +25,7 @@ const Login = () => {
   const history = useHistory();
 
   useEffect(() => {
+    setToken(null);
     localStorage.clear();
   }, []);
 
