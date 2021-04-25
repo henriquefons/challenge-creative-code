@@ -22,6 +22,11 @@ const Slide = () => {
 
   const changePage = (route) => {
     if (history.location.pathname !== route) {
+      if (open) {
+        const checkbox = document.getElementById('slideCheck');
+        checkbox.checked = false;
+        setOpen(false);
+      }
       history.push(route);
     }
   };
