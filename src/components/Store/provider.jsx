@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import StoreContext from './context';
 
-const StoreProvider = (props) => {
-  const { children } = props;
+const StoreProvider = ({ ...children }) => {
   const [token, setToken] = useState(localStorage.getItem('token'));
   return (
     <StoreContext.Provider
@@ -11,7 +10,7 @@ const StoreProvider = (props) => {
         setToken,
       }}
     >
-      {children}
+      {children.children}
     </StoreContext.Provider>
   );
 };
