@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Button, TextField, Typography } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import './Login.css';
@@ -22,6 +22,10 @@ const Login = () => {
   const [error, setError] = useState(false);
   const { setToken } = useContext(StoreContext);
   const history = useHistory();
+
+  useEffect(() => {
+    localStorage.clear();
+  }, []);
 
   const changeValues = (event) => {
     const { name, value } = event.target;

@@ -1,7 +1,8 @@
 import React from 'react';
+import './Content.css';
 
 const Content = () => (
-  <div>
+  <div className="content">
     <p>este é o dashbord</p>
   </div>
 );

@@ -1,0 +1,14 @@
+.content {
+  background-color: #3443CE;
+  min-height: 100vh;
+  margin-left: var(--width-slideClose);
+  width: calc(100vw - var(--width-slideClose)) !important;
+  transition: var(--transition-closing);
+}
+
+/* Ação quando o slide abre */
+#slideCheck:checked ~ .content {
+  margin-left: var(--width-slideOpen);
+  width:  calc(100vw - var(--width-slideOpen)) !important;
+  transition: var(--transition-opening);
+}

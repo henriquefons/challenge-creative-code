@@ -1,0 +1,41 @@
+:root {
+  --width-slideClose: 70px;
+  --width-slideOpen: 300px;
+  --transition-closing: all 300ms;
+  --transition-opening: all 200ms;
+}
+
+#slideCheck {
+  display: none;
+}
+
+.slide {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  min-height: 100%;
+  background-color: #fff;
+  width: var(--width-slideClose);
+  transition: var(--transition-closing);
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.slide button {
+  padding: 0 !important;
+}
+
+
+/* Ação quando o slide abre */
+#slideCheck:checked ~ .slide {
+  width: var(--width-slideOpen);
+  transition: var(--transition-opening);
+  height: 100%;
+  flex-direction: row !important;
+
+  align-content: flex-start;
+}
