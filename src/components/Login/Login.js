@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Button, TextField, Typography } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import './Login.css';
+import StoreContext from '../Store/context';
 
 const initialValues = {
   user: '',
@@ -19,6 +20,7 @@ const login = (data) => {
 const Login = () => {
   const [values, setValues] = useState(initialValues);
   const [error, setError] = useState(false);
+  const { setToken } = useContext(StoreContext);
   const history = useHistory();
 
   const changeValues = (event) => {
@@ -32,9 +34,9 @@ const Login = () => {
     const { token, errorLogin } = login(values);
 
     if (token) {
-      setError(false);
       localStorage.setItem('token', token);
-      history.push('/dashbord');
+      setToken(token);
+      history.push('/');
     }
     if (errorLogin) {
       setError(errorLogin);
