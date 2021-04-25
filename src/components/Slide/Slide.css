@@ -14,7 +14,7 @@
   z-index: 10;
   left: 0;
   min-height: 100%;
-  background-color: #F1F1F1;
+  background-color: #221562;
   width: var(--width-slideClose);
   transition: var(--transition-closing);
 
@@ -38,6 +38,10 @@
   justify-content: center;
 }
 
+.slide__change svg, .slide__change input {
+  color: #F1F1F1;
+}
+
 .slide__itens {
   display: flex;
   width: 100%;
@@ -45,7 +49,7 @@
   align-items: center;
   align-content: center;
 }
- 
+
 /* Ação quando o slide abre */
 #slideCheck:checked ~ .slide {
   width: var(--width-slideOpen);

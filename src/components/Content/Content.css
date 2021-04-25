@@ -1,5 +1,5 @@
 .content {
-  background-color: #3443CE;
+  background-color: #EBEDFC;
   padding-top: var(--height-header);
   min-height: calc(100vh - var(--height-header)) !important;
   margin-left: var(--width-slideClose);

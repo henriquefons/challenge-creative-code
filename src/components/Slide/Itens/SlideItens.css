@@ -9,11 +9,15 @@
 }
 
 .slide-itens:hover {
-  background-color: #221562;
-  color: #F1F1F1;
+  background-color: #F1F1F1;
+  color: #221562;
 }
 
-.slide-itens:hover svg{
+.slide-itens:hover svg, .slide-itens:hover span{
+  color: #221562;
+}
+
+.slide-itens svg, .slide-itens span{
   color: #F1F1F1;
 }
 
