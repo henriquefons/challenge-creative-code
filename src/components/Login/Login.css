@@ -45,20 +45,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.login__content-logo {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 57px;
-  line-height: 69px;
-  color: #F1F1F1;
-}
-
-.login__content-logo span {
-  color: #AA5BE2;
-}
-
+} 
 .login__content {
   width: 60%;
   display: flex;

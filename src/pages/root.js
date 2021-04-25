@@ -12,7 +12,9 @@ const Root = () => (
       <Switch>
         <Route path="/login" component={LoginUser} />
         <RoutesPrivate exact path="/" component={Home} />
-        <RoutesPrivate path="*" component={Content} />
+        <RoutesPrivate path="*">
+          <Content>Página não encontrada</Content>
+        </RoutesPrivate>
       </Switch>
     </StoreProvider>
   </Router>

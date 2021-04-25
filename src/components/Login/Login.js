@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Button, TextField, Typography } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
+import { Button, TextField, Typography } from '@material-ui/core';
+import UILogo from '../UI/Logo/Logo';
 import './Login.css';
 import StoreContext from '../Store/context';
 
@@ -94,9 +95,7 @@ const Login = () => {
         </form>
       </div>
       <div className="login__content">
-        <p className="login__content-logo">
-          Creative <span>Code</span>
-        </p>
+        <UILogo size="57px" />
       </div>
     </div>
   );
