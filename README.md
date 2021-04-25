@@ -19,27 +19,27 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Context Provider
 - [x] Consumo de API com Axios e tratamento de dados (utilizada a API do GitHub)
 - [ ] Criação das telas de cadastro de usuários, endereços e pesquisa
+- [ ] Controle de usuarios autenticados (admin, user)
 
 ## ⭐ Oque foi utilizado?
 Foi utilizado algumas bibliotecas para facilitar o desenvolvimento
 
 - react-router-dom para gerenciamento de rotas
 - Axios para consumo de API
-- Material UI para inputs e buttons
+- Material UI e Material Icons para inputs, buttons e icons
 - Prettier e ES-Lint para formatação de código e verificação de má qualidade de código
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando projeto
 
 Para instalar o projeto, siga estas etapas:
 
-Dê um git clone no projeto, e depois, abra o terminal e digite os seguintes códigos:
+Dê um git clone no projeto, e depois, abra o terminal na pasta raiz e digite os seguintes códigos
 
-Terminal
 ```
 <npm install>
 <npm start>
 ```
-## ☕ Usando <nome_do_projeto>
+## ☕ Usando projeto
 
 Para fazer o login, utilize as seguintes credenciais:
 - Login: admin
