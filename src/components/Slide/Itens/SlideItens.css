@@ -1,0 +1,24 @@
+.slide-itens{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.slide-itens__name {
+  display: none;
+}
+
+/* Ação quando o slide abre */
+#slideCheck:checked ~ .slide > .slide__itens > .slide-itens > .slide-itens__name {
+  display: initial !important;
+}
+
+#slideCheck:checked ~ .slide > .slide__itens > .slide-itens  {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
