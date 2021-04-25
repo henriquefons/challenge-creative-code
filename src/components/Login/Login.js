@@ -1,5 +1,6 @@
-import { Button, TextField } from '@material-ui/core';
 import React, { useState } from 'react';
+import { Button, TextField, Typography } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 import './Login.css';
 
 const initialValues = {
@@ -7,8 +8,18 @@ const initialValues = {
   password: '',
 };
 
+const login = (data) => {
+  const { user, password } = data;
+  if (user === 'admin' && password === 'admin') {
+    return { token: 'henriquebonitao' };
+  }
+  return { errorLogin: 'Usuário ou senha inválido' };
+};
+
 const Login = () => {
   const [values, setValues] = useState(initialValues);
+  const [error, setError] = useState(false);
+  const history = useHistory();
 
   const changeValues = (event) => {
     const { name, value } = event.target;
@@ -18,7 +29,16 @@ const Login = () => {
   function onSubmit(ev) {
     ev.preventDefault();
 
-    console.log(values);
+    const { token, errorLogin } = login(values);
+
+    if (token) {
+      setError(false);
+      history.push('/dashbord');
+    }
+    if (errorLogin) {
+      setError(errorLogin);
+      setValues(initialValues);
+    }
   }
 
   return (
@@ -44,6 +64,7 @@ const Login = () => {
               type="password"
               fullWidth
             />
+            {error && <Typography color="error">{error}</Typography>}
           </div>
           <div className="login__form-actions">
             <Button
