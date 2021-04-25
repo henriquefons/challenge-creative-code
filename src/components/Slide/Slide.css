@@ -74,5 +74,8 @@
     --transition-closing: all 300ms;
     --transition-opening: all 200ms;
   }
+  #slideCheck:checked ~ .header, #slideCheck:checked ~ .content {
+    display: none;
+  }
 }
 

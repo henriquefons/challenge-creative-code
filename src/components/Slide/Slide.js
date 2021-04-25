@@ -7,6 +7,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import { useHistory } from 'react-router-dom';
+import SearchIcon from '@material-ui/icons/Search';
 import SlideItens from './Itens/SlideItens';
 import StoreContext from '../Store/context';
 
@@ -51,6 +52,11 @@ const Slide = () => {
             icon={<PersonAddIcon fontSize="large" />}
             name="Adicionar usuário"
             action={() => changePage('/usuario/cadastrar')}
+          />
+          <SlideItens
+            icon={<SearchIcon fontSize="large" />}
+            name="Listar usuários"
+            action={() => changePage('/usuario/listar')}
           />
           <SlideItens
             icon={<ExitToAppIcon fontSize="large" />}

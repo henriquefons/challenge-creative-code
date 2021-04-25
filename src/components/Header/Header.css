@@ -23,6 +23,10 @@
   justify-content: flex-end;
 }
 
+.header__content a{
+  text-decoration: none;
+}
+
 #slideCheck:checked ~ .header {
   margin-left: var(--width-slideOpen);
   width:  calc(100vw - var(--width-slideOpen)) !important;

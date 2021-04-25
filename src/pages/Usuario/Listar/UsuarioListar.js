@@ -1,19 +1,19 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
-import Content from '../../components/Content/Content';
-import UIContainer from '../../components/UI/Container/Container';
+import Content from '../../../components/Content/Content';
+import UIContainer from '../../../components/UI/Container/Container';
 
-const Home = () => (
+const UsuarioListar = () => (
   <Content>
     <UIContainer>
       <Typography
         paragraph
         style={{ fontSize: 30, fontWeight: 700, color: '#3443CE' }}
       >
-        Seja bem vindo
+        Listagem de usuario
       </Typography>
     </UIContainer>
   </Content>
 );
 
-export default Home;
+export default UsuarioListar;

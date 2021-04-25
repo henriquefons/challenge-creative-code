@@ -1,10 +1,10 @@
 .content {
   background-color: #EBEDFC;
-  padding-top: var(--height-header);
   min-height: calc(100vh - var(--height-header)) !important;
   margin-left: var(--width-slideClose);
   width: calc(100vw - var(--width-slideClose)) !important;
   transition: var(--transition-closing);
+  padding-top: var(--height-header);
 }
 
 /* Ação quando o slide abre */

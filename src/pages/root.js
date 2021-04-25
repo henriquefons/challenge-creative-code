@@ -6,7 +6,10 @@ import Slide from '../components/Slide/Slide';
 import StoreProvider from '../components/Store/provider';
 import PrivateComponent from '../utils/Routes/PrivateComponent';
 import RoutesPrivate from '../utils/Routes/PrivateRoute';
+import Home from './Home/Home';
 import LoginUser from './Login/User/LoginUser';
+import UsuarioCadastrar from './Usuario/Cadastrar/UsuarioCadastrar';
+import UsuarioListar from './Usuario/Listar/UsuarioListar';
 
 const Root = () => (
   <Router>
@@ -17,9 +20,16 @@ const Root = () => (
         <Header />
       </PrivateComponent>
       <Switch>
-        <RoutesPrivate exact path="/">
-          <Content>Home</Content>
+        <RoutesPrivate exact path="/" component={Home} />
+        <RoutesPrivate exact path="/usuario">
+          <Content>Detalhes usuário</Content>
         </RoutesPrivate>
+        <RoutesPrivate exact path="/usuario/listar" component={UsuarioListar} />
+        <RoutesPrivate
+          exact
+          path="/usuario/cadastrar"
+          component={UsuarioCadastrar}
+        />
         <PrivateComponent>
           <RoutesPrivate path="*">
             <Content>Página não encontrada</Content>
