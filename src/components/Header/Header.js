@@ -1,9 +1,12 @@
 import React from 'react';
+import UILogo from '../UI/Logo/Logo';
 import './Header.css';
 
 const Header = () => (
   <div className="header">
-    <p>fsa</p>
+    <div className="header__content">
+      <UILogo size="30px" />
+    </div>
   </div>
 );
 

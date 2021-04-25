@@ -4,6 +4,8 @@ import './Slide.css';
 import { IconButton, InputBase } from '@material-ui/core';
 import { MenuOpen } from '@material-ui/icons';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import SlideItens from './Itens/SlideItens';
 
 const Slide = () => {
@@ -28,16 +30,13 @@ const Slide = () => {
         <div className="slide__itens">
           <SlideItens
             icon={<AccountCircleIcon fontSize="large" />}
-            name="Algo assim"
+            name="Perfil"
           />
           <SlideItens
-            icon={<AccountCircleIcon fontSize="large" />}
-            name="Algo assim"
+            icon={<PersonAddIcon fontSize="large" />}
+            name="Adicionar usuário"
           />
-          <SlideItens
-            icon={<AccountCircleIcon fontSize="large" />}
-            name="Algo assim"
-          />
+          <SlideItens icon={<ExitToAppIcon fontSize="large" />} name="Sair" />
         </div>
       </div>
     </>

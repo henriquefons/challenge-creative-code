@@ -8,8 +8,18 @@
   justify-content: center;
 }
 
+.slide-itens:hover {
+  background-color: #221562;
+  color: #F1F1F1;
+}
+
+.slide-itens:hover svg{
+  color: #F1F1F1;
+}
+
 .slide-itens__name {
   display: none;
+  padding-right: 20px;
 }
 
 /* Ação quando o slide abre */
@@ -17,8 +27,11 @@
   display: initial !important;
 }
 
+#slideCheck:checked ~ .slide > .slide__itens > .slide-itens button  {
+  padding-left: 20px !important;
+}
+
+
 #slideCheck:checked ~ .slide > .slide__itens > .slide-itens  {
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-content: center;
 }
