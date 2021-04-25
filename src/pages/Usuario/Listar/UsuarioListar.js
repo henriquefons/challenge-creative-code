@@ -1,17 +1,12 @@
-import { Typography } from '@material-ui/core';
 import React from 'react';
 import Content from '../../../components/Content/Content';
 import UIContainer from '../../../components/UI/Container/Container';
+import UITitle from '../../../components/UI/Title/UITitle';
 
 const UsuarioListar = () => (
   <Content>
     <UIContainer>
-      <Typography
-        paragraph
-        style={{ fontSize: 30, fontWeight: 700, color: '#3443CE' }}
-      >
-        Listagem de usuario
-      </Typography>
+      <UITitle name="Listagem de users" />
     </UIContainer>
   </Content>
 );

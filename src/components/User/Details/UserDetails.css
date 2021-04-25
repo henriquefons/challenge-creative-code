@@ -1,0 +1,16 @@
+.user-details__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #0C198D;
+}
+
+.user-details__search{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items:space-between ;
+  align-content: center;
+}
