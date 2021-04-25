@@ -1,4 +1,4 @@
-# Desafio Creativo Code
+# Desafio Creative Code
 ### O desafio
 
 Construir uma aplicação conectada ao teste de backend, onde que o admin
