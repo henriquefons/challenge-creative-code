@@ -9,6 +9,7 @@ import RoutesPrivate from '../utils/Routes/PrivateRoute';
 import Home from './Home/Home';
 import LoginUser from './Login/User/LoginUser';
 import UsuarioCadastrar from './Usuario/Cadastrar/UsuarioCadastrar';
+import UsuarioDetalhes from './Usuario/Detalhes/UsuarioDetalhes';
 import UsuarioListar from './Usuario/Listar/UsuarioListar';
 
 const Root = () => (
@@ -21,9 +22,7 @@ const Root = () => (
       </PrivateComponent>
       <Switch>
         <RoutesPrivate exact path="/" component={Home} />
-        <RoutesPrivate exact path="/usuario">
-          <Content>Detalhes usuário</Content>
-        </RoutesPrivate>
+        <RoutesPrivate exact path="/usuario" component={UsuarioDetalhes} />
         <RoutesPrivate exact path="/usuario/listar" component={UsuarioListar} />
         <RoutesPrivate
           exact
