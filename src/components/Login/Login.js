@@ -33,6 +33,7 @@ const Login = () => {
 
     if (token) {
       setError(false);
+      localStorage.setItem('token', token);
       history.push('/dashbord');
     }
     if (errorLogin) {
